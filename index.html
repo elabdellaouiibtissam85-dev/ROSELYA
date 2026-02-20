@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ROSELYA - Votre essence royale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">ROSELYA</div>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#boutique">Boutique</a>
+        <a href="#packs">Packs</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="actions">
+        <input type="text" id="search" placeholder="Rechercher...">
+        <button onclick="toggleCart()">🛒 (<span id="cart-count">0</span>)</button>
+    </div>
+</header>
+
+<section id="accueil" class="hero">
+    <h1>Votre essence royale</h1>
+    <p>Huiles parfumées naturelles • Sans alcool • Application sur peau</p>
+    <a href="#boutique" class="btn">Découvrir la collection</a>
+</section>
+
+<section id="boutique">
+    <h2>Nos 10 Huiles</h2>
+    <div class="products" id="products"></div>
+</section>
+
+<section id="packs">
+    <h2>Nos Packs Spéciaux</h2>
+    <div class="products" id="packs-container"></div>
+</section>
+
+<section id="apropos">
+    <h2>À propos de ROSELYA</h2>
+    <p>ROSELYA est une marque d’huiles parfumées naturelles, sans alcool, conçues pour sublimer votre peau avec élégance et douceur.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <form>
+        <input type="text" placeholder="Votre nom" required>
+        <input type="email" placeholder="Votre email" required>
+        <textarea placeholder="Votre message"></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+<div id="cart" class="cart">
+    <h3>Votre panier</h3>
+    <ul id="cart-items"></ul>
+    <p>Total : <span id="total">0</span> €</p>
+    <button onclick="toggleCart()">Fermer</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
